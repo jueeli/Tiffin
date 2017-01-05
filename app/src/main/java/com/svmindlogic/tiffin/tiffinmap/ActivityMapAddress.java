@@ -10,7 +10,6 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -19,11 +18,8 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
-
-import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.text.TextWatcher;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -136,8 +132,6 @@ public class ActivityMapAddress extends AppCompatActivity implements LocationLis
                 mGoogleApiClient, BOUNDS_INDIA, null);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-//        mLinearLayoutManager=new LinearLayoutManager(this);
-//        mRecyclerView.setLayoutManager(mLinearLayoutManager);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(ActivityMapAddress.this));
 
         mRecyclerView.setAdapter(mAutoCompleteAdapter);
