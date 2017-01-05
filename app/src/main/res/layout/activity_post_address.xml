@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_mess_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_shap"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="5dp"
+                android:focusable="true"
+                android:hint="@string/mess_user_name"
+                android:imeOptions="actionDone"
+                android:inputType="textCapWords|textNoSuggestions|none"
+                android:longClickable="false"
+                android:maxLines="2"
+                android:padding="10dp"
+                android:textColorHint="@color/hint_color"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_mess_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_shap"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="5dp"
+                android:focusable="true"
+                android:hint="@string/mess_name"
+                android:imeOptions="actionDone"
+                android:inputType="textCapWords|textNoSuggestions|none"
+                android:longClickable="false"
+                android:maxLines="2"
+                android:padding="10dp"
+                android:textColorHint="@color/hint_color"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_mess_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_shap"
+                android:drawableLeft="@drawable/ic_address"
+                android:drawablePadding="5dp"
+                android:focusable="true"
+                android:hint="@string/mess_address"
+                android:inputType="textCapWords|textNoSuggestions|none"
+                android:longClickable="false"
+                android:maxLines="5"
+                android:padding="10dp"
+                android:textColorHint="@color/hint_color"
+                android:textStyle="bold" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/txt_details_map_search"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:inputType="textCapWords|textNoSuggestions|none"-->
+                <!--android:longClickable="false"-->
+                <!--android:text="@string/txt_google_location_find"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="@dimen/text_size_mediun" />-->
+
+            <Button
+                android:id="@+id/btn_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_search"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="5dp"
+                android:inputType="textCapWords|textNoSuggestions|none"
+                android:longClickable="false"
+                android:paddingBottom="3dp"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="3dp"
+                android:text="@string/btn_location_map"
+                android:textSize="@dimen/text_size_small"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_details_food_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:inputType="textCapWords|textNoSuggestions|none"
+                android:longClickable="false"
+                android:text=" Food Type "
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_mediun" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radio_grp_food_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_veg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:inputType="textCapWords|textNoSuggestions|none"
+                        android:longClickable="false"
+                        android:text="Veg"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_veg_non_veg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:inputType="textCapWords|textNoSuggestions|none"
+                        android:longClickable="false"
+                        android:text="Veg / Non-Veg"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_details_kichan_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textCapWords|textNoSuggestions|none"
+                android:longClickable="false"
+                android:text=" Kichan Type "
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_mediun" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radio_grp_kichan_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:inputType="textCapWords|textNoSuggestions|none"
+                        android:longClickable="false"
+                        android:text="Home"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_hotel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:inputType="textCapWords|textNoSuggestions|none"
+                        android:longClickable="false"
+                        android:text="Hotel"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_details_delivery_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textCapWords|textNoSuggestions|none"
+                android:longClickable="false"
+                android:text=" Delivery Options "
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_mediun" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radio_grp_deliviry_options"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_delivery_yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:inputType="textCapWords|textNoSuggestions|none"
+                        android:longClickable="false"
+                        android:text="No"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_delivery_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:inputType="textCapWords|textNoSuggestions|none"
+                        android:longClickable="false"
+                        android:text="Yes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_details_km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="textCapWords|textNoSuggestions|none"
+                    android:longClickable="false"
+                    android:text=" Radius area for delivery"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_mediun"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_distance_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="25dp"
+                    android:inputType="textCapWords|textNoSuggestions|none"
+                    android:longClickable="false"
+                    android:text="km"
+                    android:textColor="@color/txt_color_small"
+                    android:textSize="@dimen/text_size_mediun"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekbar_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:max="50"
+                    android:visibility="gone" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_distance_set"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="25dp"-->
+                <!--android:inputType="textCapWords|textNoSuggestions|none"-->
+                <!--android:longClickable="false"-->
+                <!--android:text="km"-->
+                <!--android:visibility="gone"/>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_details_full"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:inputType="textCapWords|textNoSuggestions|none"
+                    android:longClickable="false"
+                    android:text=" Your full tiffin prize "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_mediun" />
+
+                <TextView
+                    android:id="@+id/txt_full_prize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="25dp"
+                    android:inputType="textCapWords|textNoSuggestions|none"
+                    android:longClickable="false"
+                    android:text="Rs"
+                    android:textColor="@color/txt_color_small"
+                    android:textSize="@dimen/text_size_mediun" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekbar_full_prize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:max="200" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_full_prize"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="25dp"-->
+                <!--android:inputType="textCapWords|textNoSuggestions|none"-->
+                <!--android:longClickable="false"-->
+                <!--android:text="Rs" />-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_details_half"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:inputType="textCapWords|textNoSuggestions|none"
+                    android:longClickable="false"
+                    android:text=" Your Mini tiffin prize "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_mediun" />
+
+                <TextView
+                    android:id="@+id/txt_half_prize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="25dp"
+                    android:inputType="textCapWords|textNoSuggestions|none"
+                    android:longClickable="false"
+                    android:text="Rs"
+                    android:textColor="@color/txt_color_small"
+                    android:textSize="@dimen/text_size_mediun" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekbar_half_prize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:max="100" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_half_prize"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="25dp"-->
+                <!--android:inputType="textCapWords|textNoSuggestions|none"-->
+                <!--android:longClickable="false"-->
+                <!--android:text="Rs" />-->
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_details_one_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="textCapWords|textNoSuggestions|none"
+                    android:longClickable="false"
+                    android:text="One time monthly  tiffin "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_mediun" />
+
+                <TextView
+                    android:id="@+id/txt_one_time_prize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="25dp"
+                    android:inputType="textCapWords|textNoSuggestions|none"
+                    android:longClickable="false"
+                    android:text="Rs"
+                    android:textColor="@color/txt_color_small"
+                    android:textSize="@dimen/text_size_mediun" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekbar_one_time_prize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_weight="1"
+                    android:max="2000" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_details_two_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="textCapWords|textNoSuggestions|none"
+                    android:longClickable="false"
+                    android:text="Two time monthly  tiffin "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_mediun" />
+
+                <TextView
+                    android:id="@+id/txt_two_time_prize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="25dp"
+                    android:inputType="textCapWords|textNoSuggestions|none"
+                    android:longClickable="false"
+                    android:text="Rs"
+                    android:textColor="@color/txt_color_small"
+                    android:textSize="@dimen/text_size_mediun" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekbar_two_time_prize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:max="4000" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txt_details_business"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textCapWords|textNoSuggestions|none"
+                android:longClickable="false"
+                android:text=" Business Hour "
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_mediun" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_open_at"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:inputType="textCapWords|textNoSuggestions|none"
+                    android:longClickable="false"
+                    android:text="@string/btn_open_at" />
+
+                <Button
+                    android:id="@+id/btn_close_at"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:inputType="textCapWords|textNoSuggestions|none"
+                    android:longClickable="false"
+                    android:text="@string/btn_close_at" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txt_details_sunday_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textCapWords|textNoSuggestions|none"
+                android:longClickable="false"
+                android:text=" Sunday Close "
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_mediun" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radio_grp_sunday_close"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_sunday_close_yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:inputType="textCapWords|textNoSuggestions|none"
+                        android:longClickable="false"
+                        android:text="No"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_sunday_close_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:inputType="textCapWords|textNoSuggestions|none"
+                        android:longClickable="false"
+                        android:text="Yes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_mess_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_shap"
+                android:digits="0123456789"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="5dp"
+                android:focusable="true"
+                android:hint="@string/mess_phone_number"
+                android:inputType="number"
+                android:longClickable="false"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_color"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_post_my_address"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_press_button"
+                android:inputType="textCapWords|textNoSuggestions|none"
+                android:longClickable="false"
+                android:padding="5dp"
+                android:text="@string/btn_post_address"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_mediun" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

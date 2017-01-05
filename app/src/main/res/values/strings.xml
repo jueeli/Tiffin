@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Tiffin</string>
+    <string name="action_settings">Setting</string>
+
+    <!-- For Activity Navigation Drawar -->
+    <string name="open_drawer">Drawer Open</string>
+    <string name="close_drawer">Drawer Close</string>
+
+    <string name="search_hint">Search by Locality or landmark </string>
+    <!-- Button Text -->
+    <string name="btn_map"> Map </string>
+    <string name="btn_list"> List  </string>
+    <string name="btn_other"> Other </string>
+    <string name="btn_post_address">Post My Advertisement </string>
+    <string name="btn_open_at"> Open At </string>
+    <string name="btn_close_at"> Close At </string>
+    <string name="btn_location_map"> Mark your location on map</string>
+
+    <!-- EditText Text -->
+    <string name="mess_current_location">Google Location </string>
+    <string name="mess_user_name">Name </string>
+    <string name="mess_name">Business Name </string>
+    <string name="mess_address">Business Address </string>
+    <string name="mess_area_redius">Area in km </string>
+    <string name="mess_phone_number">Mobile Number</string>
+    <string name="autocomplete_hint">Search a Place</string>
+
+
+    <!-- Textview Text -->
+    <string name="txt_tiffin_heading">TiffinMap</string>
+    <string name="txt_tiffin_search">Search Your Tiffinbox</string>
+    <string name="txt_tiffin_extra">Are you tiffin or mess provider and \n looking for more customer </string>
+    <string name="txt_tiffin_advertise"> Post Your Advertisement </string>
+    <string name="txt_tiffin_broadcast"> We will broadcasts you to maximum people</string>
+
+    <string name="txt_google_location_find"> For better search result we need your google location</string>
+    <string name="check_connection_message"> Please Check Net Connectivity</string>
+
+    <string name="terms">
+        <a href="">Terms and Privacy policy </a></string>
+     <string name="visit">
+        <a href="">www.tiffinmap.com </a></string>
+
+    <string name="google_maps_key">AIzaSyDuOfKzL3TtB95MbL2zFGFlSD345vu6AkU</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Ui Color -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#cc0000</color>
+    <color name="action_bar_color">#00AFF0</color>
+    <color name="text_hint_color">#a0a3a7</color>
+    <color name="light_gray">#eeeeee</color>
+    <color name="hint_color">#9e9e9e</color>
+    <color name="slider_color">#B300AFF0</color>
+    <color name="serch_border">#002FFA</color>
+    <color name="edt_search_border">#D5D5D5</color>
+    <color name="txt_color_small">#5EA6EC</color>
+    <color name="txt_color">#3D9FF1</color>
+    <color name="add_detail_action_color">#478BF3</color>
+    <color name="btn_background">#FC3752</color>
+    <color name="map_action_bar">#7123DB</color>
+    <color name="phone_color">#FF8434</color>
+
+    <color name="actiob_color_map_list">#03A9F4</color>
+    <color name="grey">#e3e3e3</color>
+
+
+</resources>
